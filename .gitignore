@@ -8,4 +8,6 @@ package-lock.json
 # next files
 .next
 
+.vscode
+
 .DS_Store
