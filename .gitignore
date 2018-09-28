@@ -1,3 +1,11 @@
-.next
+# node modules
 node_modules
+
+# we use yarn
+package-lock.json
+.yarnclean
+
+# next files
+.next
+
 .DS_Store
