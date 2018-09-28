@@ -1,5 +1,9 @@
 import React, { Component, Fragment } from 'react'
+import { connect } from 'react-redux'
 import { hydrate, injectGlobal } from 'react-emotion'
+
+// constants 
+import { CHANGE_CURRENT_PAGE } from '../constants'
 
 // styles 
 import global from '../styles/global'
@@ -19,7 +23,7 @@ injectGlobal`${ global }`
 
 class CarouselLayout extends Component {
   render = () => {
-    const { children } = this.props
+    const { children, navChange } = this.props
 
     return (
       <Fragment>
@@ -27,9 +31,23 @@ class CarouselLayout extends Component {
           <H1Title>Logo</H1Title>
 
           <Nav>
-            <NavItem className="previous">link 1</NavItem>
-            <NavItem>link 2</NavItem>
-            <NavItem className="next">link 3</NavItem>
+            <NavItem 
+              className="previous"
+              onClick={() => navChange('about')}
+            >
+              About
+            </NavItem>
+            <NavItem 
+              onClick={() => navChange('print')}
+            >
+              Print
+            </NavItem>
+            <NavItem 
+              className="next"
+              onClick={() => navChange('digital')}
+            >
+              Digital
+            </NavItem>
           </Nav>
         </Header>
         <MainWrapper>
@@ -40,4 +58,14 @@ class CarouselLayout extends Component {
   }
 }
 
-export default CarouselLayout
+export default connect(
+  ({ carousel }) => ({
+    movementDir: carousel.movementDir,
+  }),
+  dispatch => ({
+    navChange: currentPage => dispatch({
+      type: CHANGE_CURRENT_PAGE,
+      currentPage,
+    })
+  })
+)(CarouselLayout)

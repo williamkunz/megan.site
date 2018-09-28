@@ -11,6 +11,7 @@ export const H1Title = styled('h1')`
   margin: 0 auto;
   position: absolute;
   right: 0;
+  text-align: center;
   top: 10rem;
   width: 6rem;
   z-index: 1;
