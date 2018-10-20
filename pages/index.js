@@ -1,4 +1,4 @@
-import React, { Fragment, PureComponent } from 'react'
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 
 // layouts 
@@ -7,11 +7,11 @@ import Layout from '../layouts/carousel'
 // components 
 import PageSection from '../components/pageSection'
 
-class CarouselPage extends PureComponent {
-  componentDidMount = () => {
-    console.log(this.props)
-  }
+// json
+import digitalJson from '../constants/digital'
+import printJson from '../constants/print'
 
+class CarouselPage extends PureComponent {
   pageClasses = currentPage => {
     switch(currentPage) {
       case 'about':
@@ -32,9 +32,19 @@ class CarouselPage extends PureComponent {
 
     return (
       <Layout>
-        <PageSection className={pageClasses[0]}>About</PageSection>
-        <PageSection className={pageClasses[1]}>Print</PageSection>
-        <PageSection className={pageClasses[2]}>Digital</PageSection>
+        <PageSection 
+          className={pageClasses[0]}
+        >About</PageSection>
+        <PageSection 
+          className={pageClasses[1]} 
+          data={printJson} 
+          pageType="print"
+        />
+        <PageSection 
+          className={pageClasses[2]} 
+          data={digitalJson} 
+          pageType="digital"
+        />
       </Layout>
     )
   }

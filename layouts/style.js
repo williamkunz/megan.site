@@ -19,7 +19,9 @@ export const H1Title = styled('h1')`
 
 export const MainWrapper = styled('main')`
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
   z-index: 0;
 `

@@ -1,5 +1,25 @@
 import styled from 'react-emotion'
 
+export const Grid = styled('div')`
+  display: grid;
+  grid-gap: 10rem;
+  grid-template-columns: 30rem 30rem;
+  grid-template-rows: repeat(auto-fill, 20rem);
+  margin: 0 auto;
+  width: 70rem;
+
+  a {
+    color: ${ ({ theme }) => theme.black };
+    font-size: 1.2rem;
+    transition: filter 200ms cubic-bezier(0,0,0,0);
+    text-decoration: none;
+  }
+
+  a:hover {
+    filter: contrast(150%);
+  }
+`
+
 export const Wrapper = styled('section')`
   background-color: ${ ({ theme }) => theme.primaryColor };
   display: block;
@@ -30,10 +50,10 @@ export const Wrapper = styled('section')`
   }
 
   &.next {
-    transform: translateX(calc( 100vw - ( ( 100vw - 70vw ) / 2 ) - 8rem ));
+    transform: translateX(calc( 100vw - ( ( 100vw - 70vw ) / 2 ) ));
   }
 
   &.next-pad {
-    transform: translateX(calc( 100vw - ( ( 100vw - (70vw * 2) ) / 2 ) - 8rem ));
+    transform: translateX(calc( 100vw - ( ( 100vw - (70vw * 2) ) / 2 ) ));
   }
 `

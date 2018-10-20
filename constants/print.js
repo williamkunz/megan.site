@@ -1,4 +1,4 @@
-{
+export default {
   "images": [
     {
       "name": "my print 1",

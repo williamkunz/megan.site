@@ -60,7 +60,10 @@ body {
   letter-spacing: 0.2px;
   line-height: 1.5;
   margin: 0;
-	overflow: hidden;
+	
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 	position: relative;
 	width: 100%;
 }

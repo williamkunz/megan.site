@@ -1,11 +1,11 @@
-{
+export default {
   "images": [
     {
       "name": "my digital 1",
       "thumbnail": {
         "alt": "Email to promote the Coatings+ Conference.",
-        "1x": "/static/print/<uniqueId>/thumbnail/@1x.png",
-        "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
+        "1x": "/static/digital/<uniqueId>/thumbnail/@1x.png",
+        "2x": "/static/digital/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
         "description": "Email to promote the Coatings+ Conference.",
@@ -23,8 +23,8 @@
       "name": "my digital 1",
       "thumbnail": {
         "alt": "SSPC 2018 email graphic",
-        "1x": "/static/print/<uniqueId>/thumbnail/@1x.png",
-        "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
+        "1x": "/static/digital/<uniqueId>/thumbnail/@1x.png",
+        "2x": "/static/digital/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
         "description": "Email to promote the annual SSPC 2018 Conference.",
@@ -42,8 +42,8 @@
       "name": "my digital 1",
       "thumbnail": {
         "alt": "social media email graphic",
-        "1x": "/static/print/<uniqueId>/thumbnail/@1x.png",
-        "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
+        "1x": "/static/digital/<uniqueId>/thumbnail/@1x.png",
+        "2x": "/static/digital/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
         "description": "Email graphic designed to aware the public of SSPC's social media presence.",
@@ -61,8 +61,8 @@
       "name": "my digital 1",
       "thumbnail": {
         "alt": "Welcome reception sign",
-        "1x": "/static/print/<uniqueId>/thumbnail/@1x.png",
-        "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
+        "1x": "/static/digital/<uniqueId>/thumbnail/@1x.png",
+        "2x": "/static/digital/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
         "description": "Digital illustration of New Orleans night life. This reception sign was used digitally and was printed to help promote the SSPC 2018 conference welcome reception.",
@@ -80,8 +80,8 @@
       "name": "my digital 1",
       "thumbnail": {
         "alt": "Welcome tampa sign",
-        "1x": "/static/print/<uniqueId>/thumbnail/@1x.png",
-        "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
+        "1x": "/static/digital/<uniqueId>/thumbnail/@1x.png",
+        "2x": "/static/digital/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
         "description": "This digital illustration was used on the welcome reception sign for the SSPC 2017 conference. It was used digitally to promote the reception.",
