@@ -4,8 +4,8 @@ import { connect } from 'react-redux'
 // layouts 
 import Layout from '../layouts/carousel'
 
-// styles 
-import { PageSection } from './style'
+// components 
+import PageSection from '../components/pageSection'
 
 class CarouselPage extends PureComponent {
   componentDidMount = () => {

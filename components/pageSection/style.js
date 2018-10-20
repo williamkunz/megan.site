@@ -1,6 +1,6 @@
 import styled from 'react-emotion'
 
-export const PageSection = styled('section')`
+export const Wrapper = styled('section')`
   background-color: ${ ({ theme }) => theme.primaryColor };
   display: block;
   left: 0;
