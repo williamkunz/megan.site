@@ -13,9 +13,7 @@ import { Image, Wrapper } from './style'
 
 class FeaturePage extends PureComponent {
   render = () => {
-    const { currentItem } = this.props 
-
-    console.log(currentItem)
+    const { currentItem } = this.props
 
     return (
       <Layout>
@@ -33,6 +31,7 @@ class FeaturePage extends PureComponent {
             return (
               <Image 
                 alt={image.alt}
+                key={`feature-${ index }-${ currentItem.uniqueId }`}
                 src={image['1x'].replace('<uniqueId>', currentItem.uniqueId)}
                 srcSet={`${ image['1x'].replace('<uniqueId>', currentItem.uniqueId) } 1x, ${ image['2x'].replace('<uniqueId>', currentItem.uniqueId) } 2x`}
               />
