@@ -2,14 +2,10 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 
 // layouts 
-import Layout from '../layouts/carousel'
+import Layout from '../layouts/Carousel'
 
 // components 
 import PageSection from '../components/pageSection'
-
-// json
-import digitalJson from '../constants/digital'
-import printJson from '../constants/print'
 
 class CarouselPage extends PureComponent {
   pageClasses = currentPage => {
@@ -26,7 +22,7 @@ class CarouselPage extends PureComponent {
   }
 
   render = () => {
-    const { currentPage } = this.props
+    const { currentPage, digital, print } = this.props
 
     const pageClasses = this.pageClasses(currentPage)
 
@@ -37,12 +33,12 @@ class CarouselPage extends PureComponent {
         >About</PageSection>
         <PageSection 
           className={pageClasses[1]} 
-          data={printJson} 
+          data={print} 
           pageType="print"
         />
         <PageSection 
           className={pageClasses[2]} 
-          data={digitalJson} 
+          data={digital} 
           pageType="digital"
         />
       </Layout>
@@ -51,8 +47,10 @@ class CarouselPage extends PureComponent {
 }
 
 export default connect(
-  ({ carousel }) => ({
+  ({ assets, carousel }) => ({
     currentPage: carousel.currentPage,
+    digital: assets.digital, 
     movementDir: carousel.movementDir,
+    print: assets.print,
   }),
 )(CarouselPage)

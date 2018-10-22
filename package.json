@@ -4,19 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "BABEL_ENV=development NODE_ENV=development node server.js",
+    "build": "BABEL_ENV=production NODE_ENV=production next build",
+    "start": "BABEL_ENV=production NODE_ENV=production node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-plugin-emotion": "^9.2.9",
+    "compression": "^1.7.3",
     "emotion": "^9.2.9",
     "emotion-server": "^9.2.9",
     "emotion-theming": "^9.2.9",
+    "express": "^4.16.4",
     "next": "7.0.0",
-    "next-redux-wrapper": "^2.0.0",
     "next-routes": "^1.4.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",

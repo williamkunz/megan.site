@@ -23,9 +23,8 @@ export default ({
             '2x': thumbnail['2x'].replace('<uniqueId>', uniqueId),
           }
 
-
           return (
-            <Link route={`/${ pageType }/${ uniqueId }`}>
+            <Link key={`thumb-${ uniqueId }`} route={`/${ pageType }/${ uniqueId }`}>
               <a title={name}>
                 <img 
                   alt={thumbnail.alt}

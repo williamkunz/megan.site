@@ -1,8 +1,7 @@
 import App, { Container } from 'next/app'
 import React from 'react'
-import { initStore } from '../store'
+import withRedux from '../store/withRedux'
 import { Provider } from 'react-redux'
-import withRedux from 'next-redux-wrapper'
 import { ThemeProvider } from 'emotion-theming'
 
 // theme 
@@ -12,16 +11,15 @@ class MyApp extends App {
   render = () => {
     const {
       Component,
-      pageProps,
+      reduxStore,
       router,
-      store,
     } = this.props
 
     return (
       <Container>
-        <Provider store={store}>
+        <Provider store={reduxStore}>
           <ThemeProvider theme={theme}>
-            <Component />          
+            <Component query={router.query} />          
           </ThemeProvider>
         </Provider>
       </Container>
@@ -29,4 +27,4 @@ class MyApp extends App {
   }
 }
 
-export default withRedux(initStore)(MyApp)
+export default withRedux(MyApp)
