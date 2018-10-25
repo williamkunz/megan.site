@@ -7,17 +7,25 @@ export const Header = styled('header')`
 `
 
 export const H1Title = styled('h1')`
+  font-family: 'Sacramento', cursive;
   left: 0;
   margin: 0 auto;
   position: absolute;
   right: 0;
   text-align: center;
   top: 10rem;
-  width: 6rem;
+  width: 30rem;
   z-index: 1;
+
+  & a {
+    color: ${ ({ theme }) => theme.black };
+    font-size: 5rem;
+    text-decoration: none;
+  }
 `
 
 export const MainWrapper = styled('main')`
+  background-color: ${ ({ theme }) => theme.white };
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -38,6 +46,8 @@ export const Nav = styled('nav')`
 `
 
 export const NavItem = styled('a')`
+  cursor: pointer;
+  font-size: 2rem;
   left: 0;
   margin: auto;
   position: absolute;

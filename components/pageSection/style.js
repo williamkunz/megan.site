@@ -10,7 +10,7 @@ export const Grid = styled('div')`
 
   a {
     color: ${ ({ theme }) => theme.black };
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     transition: filter 200ms cubic-bezier(0,0,0,0);
     text-decoration: none;
   }

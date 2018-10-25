@@ -6,9 +6,9 @@ export default class MyDocument extends Document {
     const page = renderPage()
     const styles = extractCritical(page.html)
 
-    return { 
-      ...page, 
-      ...styles, 
+    return {
+      ...page,
+      ...styles,
     }
   }
 
@@ -26,6 +26,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>Megan Peterson</title>
+          <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Sacramento" rel="stylesheet" />
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
         <body>
