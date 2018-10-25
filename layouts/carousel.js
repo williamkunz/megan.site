@@ -2,15 +2,17 @@ import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import { hydrate, injectGlobal } from 'react-emotion'
 
-// constants 
+import { Link } from '../routes'
+
+// constants
 import { CHANGE_CURRENT_PAGE } from '../constants'
 
-// styles 
+// styles
 import global from '../styles/global'
-import { 
-  H1Title, 
-  Header, 
-  MainWrapper, 
+import {
+  H1Title,
+  Header,
+  MainWrapper,
   Nav,
   NavItem,
 } from './style'
@@ -28,21 +30,21 @@ class CarouselLayout extends Component {
     return (
       <Fragment>
         <Header>
-          <H1Title>Logo</H1Title>
+          <H1Title><Link route="/"><a title="Home page of Megan Peterson's work">Megan Peterson</a></Link></H1Title>
 
           <Nav>
-            <NavItem 
+            <NavItem
               className="previous"
               onClick={() => navChange('about')}
             >
               About
             </NavItem>
-            <NavItem 
+            <NavItem
               onClick={() => navChange('print')}
             >
               Print
             </NavItem>
-            <NavItem 
+            <NavItem
               className="next"
               onClick={() => navChange('digital')}
             >

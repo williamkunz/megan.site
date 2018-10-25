@@ -14,11 +14,11 @@ export const Header = styled('header')`
   }
 
   & h1 {
-    font-size: 1.3rem;
+    font-size: 2.2rem;
   }
 
   & p {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     text-align: right;
   }
 `
