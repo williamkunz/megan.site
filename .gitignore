@@ -7,6 +7,7 @@ package-lock.json
 
 # next files
 .next
+out
 
 .vscode
 

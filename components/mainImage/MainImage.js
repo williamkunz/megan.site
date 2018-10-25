@@ -19,6 +19,6 @@ export default ({
 
     <h1>{name}</h1>
 
-    <p>{description}</p>
+    <p dangerouslySetInnerHTML={{ __html: description }} />
   </Header>
 )

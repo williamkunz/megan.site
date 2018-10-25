@@ -19,6 +19,7 @@ export const Header = styled('header')`
 
   & p {
     font-size: 1.8rem;
+    margin-bottom: 1.6rem;
     text-align: right;
   }
 `
