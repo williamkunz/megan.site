@@ -9,7 +9,7 @@ import Layout from '../layouts/carousel'
 import MainImage from '../components/mainImage'
 
 // styles 
-import { Image, Wrapper } from './style'
+import { Image, Wrapper } from '../styles/style'
 
 class FeaturePage extends PureComponent {
   render = () => {

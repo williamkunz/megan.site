@@ -6,6 +6,7 @@ export const Grid = styled('div')`
   grid-template-columns: 30rem 30rem;
   grid-template-rows: repeat(auto-fill, 20rem);
   margin: 0 auto;
+  padding: 0 1.6rem;
   width: 70rem;
 
   a {
@@ -25,18 +26,18 @@ export const Wrapper = styled('section')`
   display: block;
   left: 0;
   margin: auto;
-  min-height: 100vw;
+  min-height: 200rem;
+  max-width: 70vw;
   overflow: hidden;
   padding-top: 33rem;
   padding-bottom: 15rem;
   position: absolute;
   right: 0;
   top: 0;
-  transition: background-color 650ms ease-in-out, transform 650ms ease-in-out;
+  transition: background-color 850ms ease-in-out, transform 650ms ease-in-out;
 
   &.center {
     background-color: ${ ({ theme }) => theme.white };
-    max-width: 70vw;
     position: static;
     transform: translateX(0);
   }
@@ -50,10 +51,10 @@ export const Wrapper = styled('section')`
   }
 
   &.next {
-    transform: translateX(calc( 100vw - ( ( 100vw - 70vw ) / 2 ) ));
+    transform: translateX(calc( 100vw - ( ( 100vw - 70vw ) / 2 ) - 5vw ));
   }
 
   &.next-pad {
-    transform: translateX(calc( 100vw - ( ( 100vw - (70vw * 2) ) / 2 ) ));
+    transform: translateX(calc( 100vw - ( ( 100vw - (70vw * 2) ) / 2 ) - 5vw ));
   }
 `

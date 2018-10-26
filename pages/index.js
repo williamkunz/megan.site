@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import Layout from '../layouts/carousel'
 
 // components
+import About from '../components/about'
 import PageSection from '../components/pageSection'
 
 class CarouselPage extends PureComponent {
@@ -29,8 +30,9 @@ class CarouselPage extends PureComponent {
     return (
       <Layout>
         <PageSection
+          aboutPage
           className={pageClasses[0]}
-        >About</PageSection>
+        />
         <PageSection
           className={pageClasses[1]}
           data={print}

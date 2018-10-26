@@ -1,13 +1,24 @@
 import React from 'react'
 import { Link } from '../../routes'
 
+import About from '../../components/about'
+
 import { Grid, Wrapper } from './style'
 
 export default ({ 
+  aboutPage,
   className, 
   data = {}, 
   pageType,
 }) => {
+  if (aboutPage) {
+    return (
+      <Wrapper className={className}>
+        <About />
+      </Wrapper>
+    )
+  }
+
   if (!data.images) {  
     return (
       <Wrapper className={className} />

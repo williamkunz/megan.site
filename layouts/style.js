@@ -21,15 +21,13 @@ export const H1Title = styled('h1')`
     color: ${ ({ theme }) => theme.black };
     font-size: 5rem;
     text-decoration: none;
+    user-select: none;
   }
 `
 
 export const MainWrapper = styled('main')`
   background-color: ${ ({ theme }) => theme.white };
   position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   width: 100%;
   z-index: 0;
 `

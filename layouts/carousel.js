@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import { hydrate, injectGlobal } from 'react-emotion'
 
-import { Link } from '../routes'
+import { Link, Router } from '../routes'
 
 // constants
 import { CHANGE_CURRENT_PAGE } from '../constants'
@@ -35,18 +35,30 @@ class CarouselLayout extends Component {
           <Nav>
             <NavItem
               className="previous"
-              onClick={() => navChange('about')}
+              onClick={() => {
+                navChange('about')
+
+                Router.pushRoute('/')
+              }}
             >
               About
             </NavItem>
             <NavItem
-              onClick={() => navChange('print')}
+              onClick={() => {
+                navChange('print')
+
+                Router.pushRoute('/')
+              }}
             >
               Print
             </NavItem>
             <NavItem
               className="next"
-              onClick={() => navChange('digital')}
+              onClick={() => {
+                navChange('digital')
+
+                Router.pushRoute('/')
+              }}
             >
               Digital
             </NavItem>

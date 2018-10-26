@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #f4f4f4;
   color: #0f0f0f;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.6rem;
