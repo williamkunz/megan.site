@@ -23,7 +23,12 @@ export const Wrapper = styled.section`
     color: ${ ({ theme }) => theme.black };
     display: grid;
     grid-gap: 3.2rem;
-    grid-template-columns: 1fr 2fr;
-    min-height: calc(100vh - 48rem);
-    padding: 0 12.8rem;
+    grid-template-columns: 1fr;
+    padding: 0 3.2rem;
+
+    @media only screen and (min-width: 700px) {
+        grid-template-columns: 1fr 2fr;
+        min-height: calc(100vh - 48rem);
+        padding: 0 12.8rem;
+    }
 `
