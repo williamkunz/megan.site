@@ -52,13 +52,25 @@ export const NavItem = styled('a')`
   right: 0;
   text-align: center;
   transform: translateX(0);
-  width: 18.5rem;
+  width: 10.5rem;
 
   &.previous {
-    transform: translateX(-18.5rem);
+    transform: translateX(-12.5rem);
   }
 
   &.next {
-    transform: translateX(18.5rem);
+    transform: translateX(12.5rem);
+  }
+
+  @media only screen and (min-width: 550px) {
+    width: 18.5rem;
+
+    &.previous {
+      transform: translateX(-18.5rem);
+    }
+
+    &.next {
+      transform: translateX(18.5rem);
+    }
   }
 `

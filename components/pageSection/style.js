@@ -3,11 +3,11 @@ import styled from 'react-emotion'
 export const Grid = styled('div')`
   display: grid;
   grid-gap: 10rem;
-  grid-template-columns: 30rem 30rem;
+  grid-template-columns: 30rem;
   grid-template-rows: repeat(auto-fill, 20rem);
   margin: 0 auto;
   padding: 0 1.6rem;
-  width: 70rem;
+  width: 30rem;
 
   a {
     color: ${ ({ theme }) => theme.black };
@@ -19,6 +19,11 @@ export const Grid = styled('div')`
   a:hover {
     filter: contrast(150%);
   }
+
+  @media only screen and (min-width: 760px) {
+    grid-template-columns: 30rem 30rem;
+    width: 70rem;
+  }
 `
 
 export const Wrapper = styled('section')`
@@ -27,7 +32,7 @@ export const Wrapper = styled('section')`
   left: 0;
   margin: auto;
   min-height: 200rem;
-  max-width: 70vw;
+  max-width: 100vw;
   overflow: hidden;
   padding-top: 33rem;
   padding-bottom: 15rem;
@@ -43,18 +48,38 @@ export const Wrapper = styled('section')`
   }
 
   &.previous {
-    transform: translateX(calc( -1 * 100vw + ( ( 100vw - 70vw ) / 2 ) + 8rem ));
+    transform: translateX(calc( -1 * 100vw ));
   }
 
   &.previous-pad {
-    transform: translateX(calc( -1 * 100vw + ( ( 100vw - (70vw * 2) ) / 2 ) + 8rem ));
+    transform: translateX(calc( -2 * 100vw ));
   }
 
   &.next {
-    transform: translateX(calc( 100vw - ( ( 100vw - 70vw ) / 2 ) - 5vw ));
+    transform: translateX(calc( 100vw * 1 ));
   }
 
   &.next-pad {
-    transform: translateX(calc( 100vw - ( ( 100vw - (70vw * 2) ) / 2 ) - 5vw ));
+    transform: translateX(calc( 100vw * 2 ));
   }
+
+  @media only screen and (min-width: 1050px) {
+    max-width: 70vw;
+
+    &.previous {
+      transform: translateX(calc( -1 * 100vw + ( ( 100vw - 70vw ) / 2 ) + 8rem ));
+    }
+
+    &.previous-pad {
+      transform: translateX(calc( -1 * 100vw + ( ( 100vw - (70vw * 2) ) / 2 ) + 8rem ));
+    }
+
+    &.next {
+      transform: translateX(calc( 100vw - ( ( 100vw - 70vw ) / 2 ) - 5vw ));
+    }
+
+    &.next-pad {
+      transform: translateX(calc( 100vw - ( ( 100vw - (70vw * 2) ) / 2 ) - 5vw ));
+    }
+  } 
 `
