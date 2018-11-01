@@ -32,7 +32,7 @@ export default {
         "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
-        "description": "SSPC teamed up with the U.S. Department of Defense to administer their Corrosion Conference. I created all of the graphics, printed pieces, logo, website and anything else graphical they needed for their conference. This ad was create to help promote their conference. In this ad you'll see the logo I created for them as well.",
+        "description": "SSPC teamed up with the U.S. Department of Defense to administer their Corrosion Conference. I created all of the graphics, printed pieces, logo, website and anything else graphical they needed for their conference. This ad was created to help promote their conference. In this ad you'll see the logo I created for them as well.",
         "images": [
           {
             "alt": "Advertisement for DoD Conference",
@@ -52,7 +52,7 @@ export default {
         "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
-        "description": "I was asked to come up with a way to boost membership at SSPC and I came up with the idea of giving new members a discount on the cost of membership when they donated to the SSPC hurricane relief fund. It was around this time that hurricane Harvey hit Texas, and I wanted to come up with a way for new members to feel like they we're doing good and also getting something in return (a discounted membership). This proved to work, because within the 3 months this campaign ran, we saw a 25 percent increase in membership. ",
+        "description": "I was asked to come up with a way to boost membership at SSPC and I came up with the idea of giving new members a discount on the cost of membership when they donated to the SSPC hurricane relief fund. It was around this time that hurricane Harvey hit Texas, and I wanted to come up with a way for new members to feel like they were doing good and also getting something in return (a discounted membership). This proved to work, because within the 3 months this campaign ran, we saw a 25 percent increase in membership. ",
         "images": [
           {
             "alt": "Advertisement to promote the SSPC hurricane relief fund.",
@@ -92,7 +92,7 @@ export default {
         "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
-        "description": "Every year SSPC has an annual conference and due to an older demographic, it is required to have an onsite guide for attendees to reference. This is a huge project that I had to design, edit, and collect all of the content that the guide contained. This guide contains 98 pages, stepping pages and enough text to make someone go cross eyed. My goals when designing this guide was to make sure that the text was easy to read, it was well organized and visually appealing. This piece contains some of the driest content I've ever read, and making it seem fun and worth while was quite a challenge. After everything was and done, I feel that I accomplished everything I set out to do. ",
+        "description": "Every year SSPC has an annual conference and due to an older demographic, it is required to have an onsite guide for attendees to reference. This is a huge project that I had to design, edit, and collect all of the content that went in this piece. This guide contains 98 stepping pages and enough text to make someone go cross eyed. My goals when designing this guide was to make sure that the text was easy to read, it was well organized and visually appealing. This piece contains some of the driest content I've ever read, and making it seem fun and worth while was quite a challenge. After everything was said and done, I feel that I accomplished everything I set out to do. ",
         "images": [
           {
             "alt": "Conference guide",
@@ -141,7 +141,7 @@ export default {
         "2x": "/static/print/<uniqueId>/thumbnail/@2x.png",
       },
       "features": {
-        "description": "Before the start of the SSPC annual conference, they mail preliminary guides to last year's attendees so they can get a glimpse of what to expect this year. Every year SSPC has sent out a bland, 8.5x11 magazine to their past guests and it usually doesn't get much impact. So when I sat down to design this guide, I decided to make something different. First I decided to change the shape, it's an 8x8 sqaure, and then I chose to make the design more modern by using monochromatic colors, bold font and a light frame to pull the viewers gaze to the center of the cover. I also changed the order of the guide, used bigger font and colored coded each day so that it's more organized. After recieving their preliminary guide in the mail, a lot of people thanked me for making the guide easier to follow and praised me on the modern design.",
+        "description": "Before the start of the SSPC annual conference, they mail preliminary guides to last year's attendees so they can get a glimpse of what to expect this year. Every year SSPC has sent out a bland, 8 1/2 by 11 magazine to their past guests and it usually doesn't make much of an impact. So when I sat down to design this guide, I decided to make something different. First I decided to change the shape, it's an 8x8 sqaure, and then I chose to make the design more modern by using monochromatic colors, bold font and a light frame to pull the viewers gaze to the center of the cover. I also changed the order of the guide, used bigger font and colored coded each day so that it's more organized. After recieving their preliminary guide in the mail, a lot of people thanked me for making the guide easier to follow and praised me on the modern design.",
         "images": [
           {
             "alt": "SSPC preliminary guide",
