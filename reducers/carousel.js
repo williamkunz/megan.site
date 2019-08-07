@@ -1,7 +1,7 @@
 import { CHANGE_CURRENT_PAGE, CHANGE_MOVEMENT_DIR } from '../constants'
 
 const initialState = {
-  currentPage: 'print',
+  currentPage: 'graphic',
   movementDir: null,
 }
 
