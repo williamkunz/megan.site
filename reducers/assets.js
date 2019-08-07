@@ -1,10 +1,10 @@
 // json
-import digitalJson from '../constants/digital'
-import printJson from '../constants/print'
+import webJson from '../constants/web'
+import graphicJson from '../constants/graphic'
 
 const initialState = {
-  digital: digitalJson,
-  print: printJson,
+  web: webJson,
+  graphic: graphicJson,
 }
 
 export default (state = initialState, action = {}) => {

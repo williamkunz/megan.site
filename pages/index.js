@@ -1,11 +1,10 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 
-// layouts
+// layouts 
 import Layout from '../layouts/carousel'
 
-// components
-import About from '../components/about'
+// components 
 import PageSection from '../components/pageSection'
 
 class CarouselPage extends PureComponent {
@@ -14,7 +13,7 @@ class CarouselPage extends PureComponent {
       case 'about':
         return ['center', 'next', 'next-pad']
 
-      case 'digital':
+      case 'web':
         return ['previous-pad', 'previous', 'center']
 
       default:
@@ -23,25 +22,25 @@ class CarouselPage extends PureComponent {
   }
 
   render = () => {
-    const { currentPage, digital, print } = this.props
+    const { currentPage, web, graphic } = this.props
 
     const pageClasses = this.pageClasses(currentPage)
 
     return (
       <Layout>
-        <PageSection
+        <PageSection 
           aboutPage
           className={pageClasses[0]}
+        >About</PageSection>
+        <PageSection 
+          className={pageClasses[1]} 
+          data={graphic} 
+          pageType="graphic"
         />
-        <PageSection
-          className={pageClasses[1]}
-          data={print}
-          pageType="print"
-        />
-        <PageSection
-          className={pageClasses[2]}
-          data={digital}
-          pageType="digital"
+        <PageSection 
+          className={pageClasses[2]} 
+          data={web} 
+          pageType="web"
         />
       </Layout>
     )
@@ -51,8 +50,8 @@ class CarouselPage extends PureComponent {
 export default connect(
   ({ assets, carousel }) => ({
     currentPage: carousel.currentPage,
-    digital: assets.digital,
+    web: assets.web, 
     movementDir: carousel.movementDir,
-    print: assets.print,
+    graphic: assets.graphic,
   }),
 )(CarouselPage)

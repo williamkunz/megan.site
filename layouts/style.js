@@ -16,6 +16,7 @@ export const H1Title = styled('h1')`
   top: 10rem;
   width: 30rem;
   z-index: 1;
+  font-size: 7rem;
 
   & a {
     color: ${ ({ theme }) => theme.black };
