@@ -11,6 +11,6 @@ COPY . /app
 
 RUN yarn build
 
-EXPOSE 3030
+EXPOSE 3040
 
 ENTRYPOINT ["yarn", "prod"]
