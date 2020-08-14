@@ -8,7 +8,7 @@
     "build": "BABEL_ENV=production NODE_ENV=production next build",
     "start": "BABEL_ENV=production NODE_ENV=production node server.js",
     "prod": "NODE_ENV=production next start",
-    "production": "now && now alias"
+    "production": "now && now alias --build"
   },
   "author": "",
   "license": "ISC",
